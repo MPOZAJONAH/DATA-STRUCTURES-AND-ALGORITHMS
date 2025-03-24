@@ -1,22 +1,18 @@
 #include <stdio.h>
-//#include<stdlib.h>
-
-void swap(int *a, int *b){
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-    }
-int main() {
-    int m, j;
-    printf("Please enter any number m: ");
+//Code to swap 2 numbers
+int main(){
+    int m,j;
+    printf(" Please enter m; ");
     scanf("%d", &m);
-    printf("Please enter any number j: ");
+    
+    printf("\nPlease enter j; ");
     scanf("%d", &j);
-    printf("Before swap: m = %d, j = %d\n",m,j);
-
-    swap(&m, &j);
-
-    printf("After swap: m = %d, j = %d\n", m, j);
-
-    return 0;
-    }
+    printf("\nBefore swap: ");
+    printf("\n m = %d, and j = %d ",m,j);
+    int temp = m;
+    m = j;
+    j = temp;
+    printf("\nAfter swap: ");
+    printf("\n m = %d, and j = %d ",m,j);
+    
+}
